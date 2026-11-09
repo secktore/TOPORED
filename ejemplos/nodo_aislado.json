@@ -1,0 +1,34 @@
+{
+  "nombre": "LAN con equipo aislado",
+  "escenario": {
+    "nombre": "red_local"
+  },
+  "dispositivos": [
+    {
+      "id": "S1",
+      "tipo": "switch"
+    },
+    {
+      "id": "PC1",
+      "tipo": "pc"
+    },
+    {
+      "id": "PC2",
+      "tipo": "pc"
+    },
+    {
+      "id": "AP1",
+      "tipo": "ap"
+    }
+  ],
+  "enlaces": [
+    {
+      "a": "S1",
+      "b": "PC1"
+    },
+    {
+      "a": "S1",
+      "b": "PC2"
+    }
+  ]
+}

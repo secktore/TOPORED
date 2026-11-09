@@ -1,0 +1,27 @@
+{
+  "nombre": "Entrada inválida",
+  "dispositivos": [
+    {
+      "id": "S1",
+      "tipo": "switch"
+    },
+    {
+      "id": "PC1",
+      "tipo": "pc"
+    },
+    {
+      "id": "PC1",
+      "tipo": "pc"
+    }
+  ],
+  "enlaces": [
+    {
+      "a": "S1",
+      "b": "PC1"
+    },
+    {
+      "a": "S1",
+      "b": "PC9"
+    }
+  ]
+}

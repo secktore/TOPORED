@@ -1,0 +1,71 @@
+{
+  "nombre": "Árbol jerárquico",
+  "escenario": {
+    "nombre": "red_con_salida",
+    "exigir_arbol": true
+  },
+  "dispositivos": [
+    {
+      "id": "R1",
+      "tipo": "router"
+    },
+    {
+      "id": "S1",
+      "tipo": "switch"
+    },
+    {
+      "id": "S2",
+      "tipo": "switch"
+    },
+    {
+      "id": "S3",
+      "tipo": "switch"
+    },
+    {
+      "id": "PC1",
+      "tipo": "pc"
+    },
+    {
+      "id": "PC2",
+      "tipo": "pc"
+    },
+    {
+      "id": "PC3",
+      "tipo": "pc"
+    },
+    {
+      "id": "SRV1",
+      "tipo": "servidor"
+    }
+  ],
+  "enlaces": [
+    {
+      "a": "R1",
+      "b": "S1"
+    },
+    {
+      "a": "S1",
+      "b": "S2"
+    },
+    {
+      "a": "S1",
+      "b": "S3"
+    },
+    {
+      "a": "S2",
+      "b": "PC1"
+    },
+    {
+      "a": "S2",
+      "b": "PC2"
+    },
+    {
+      "a": "S3",
+      "b": "PC3"
+    },
+    {
+      "a": "S3",
+      "b": "SRV1"
+    }
+  ]
+}

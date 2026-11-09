@@ -1,0 +1,38 @@
+{
+  "nombre": "Cadena",
+  "escenario": {
+    "nombre": "red_con_salida"
+  },
+  "dispositivos": [
+    {
+      "id": "R1",
+      "tipo": "router"
+    },
+    {
+      "id": "S1",
+      "tipo": "switch"
+    },
+    {
+      "id": "S2",
+      "tipo": "switch"
+    },
+    {
+      "id": "PC1",
+      "tipo": "pc"
+    }
+  ],
+  "enlaces": [
+    {
+      "a": "R1",
+      "b": "S1"
+    },
+    {
+      "a": "S1",
+      "b": "S2"
+    },
+    {
+      "a": "S2",
+      "b": "PC1"
+    }
+  ]
+}

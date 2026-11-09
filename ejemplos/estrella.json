@@ -1,0 +1,38 @@
+{
+  "nombre": "Estrella LAN",
+  "escenario": {
+    "nombre": "red_local"
+  },
+  "dispositivos": [
+    {
+      "id": "S1",
+      "tipo": "switch"
+    },
+    {
+      "id": "PC1",
+      "tipo": "pc"
+    },
+    {
+      "id": "PC2",
+      "tipo": "pc"
+    },
+    {
+      "id": "SRV1",
+      "tipo": "servidor"
+    }
+  ],
+  "enlaces": [
+    {
+      "a": "S1",
+      "b": "PC1"
+    },
+    {
+      "a": "S1",
+      "b": "PC2"
+    },
+    {
+      "a": "S1",
+      "b": "SRV1"
+    }
+  ]
+}
