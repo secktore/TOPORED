@@ -1,0 +1,41 @@
+PARCHE TOPORED ESCRITORIO - NO ES EL PROYECTO COMPLETO
+
+Copia app_escritorio.py y construir_escritorio.bat en topored_v02,
+al lado de app.py, requirements.txt y el directorio topored/.
+No borres ni reemplaces la version Streamlit.
+
+Requisitos de ejecucion del parche:
+Python con Tkinter, networkx y pydantic.
+Requisitos de compilacion: ademas PyInstaller.
+La validacion conserva pydantic, que usa un componente nativo pydantic-core.
+Tkinter utiliza Tcl/Tk. No garantiza ausencia de bloqueos de seguridad.
+
+Desde la carpeta exterior y con el entorno virtual activo:
+1. python -m tkinter
+2. python -c "from topored.analisis import analizar; print('Nucleo disponible')"
+3. python app_escritorio.py
+4. Probar ejemplo, JSON propios y reporte.
+5. python -m pytest
+6. Solo si funciona: .\construir_escritorio.bat
+
+Si no tienes dependencias:
+python -m pip install networkx pydantic pyinstaller
+No necesita ejecutar requirements.txt para este parche.
+
+El paquete nuevo se guarda en:
+%LOCALAPPDATA%\TopoRedEscritorio_dist\TopoRedEscritorio
+Llevar toda esa carpeta (incluyendo _internal y ejemplos).
+No se modifica el lanzador anterior ni su BAT.
+
+CAMBIOS
+Ventana Tkinter; editor JSON para entrada manual; archivo JSON; controles de escenario;
+reporte TXT; Canvas circular; tiempo solo de analisis.
+No incluye formularios de captura por filas, PNG, PDF, Excel ni C-ENL.
+El JSON cargado aplica escenario. Si editas escenario dentro del texto,
+los controles visibles siguen siendo la configuracion efectiva para analizar.
+
+ESTADO
+Sintaxis Python revisada automaticamente. Interfaz no ejecutada en Windows por el asistente.
+Reutiliza los modulos del proyecto existente: no es un archivo autonomo.
+Las pruebas del nucleo no certifican interfaz ni empaquetado.
+Probar en computadora destino con seguridad habitual y usuario normal.
